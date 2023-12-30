@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portait Chinois G.G </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Paytone+One&family=Spectral:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" id="Open">
+            <span class="Burger-icon"></span>
+            <span class="Burger-icon"></span>
+            <span class="Burger-icon"></span>
+        </a>
+        <h1><div class="titre"> PORTRAIT CHINOIS</div><div class="prenom">Grandval Gael</div>
+        </h1>
+        
+    </header>
+
+    <div id="SideNav" class="SideNav">
+        <a id="rubrique" class="Close"> X </a>
+        <ul>
+            <li> <a href="#animal" id="rubrique">  ➤ Animal</a></li>
+            <li> <a href="#saison" id="rubrique"> ➤ Saison</a></li>
+            <li> <a href="#moment" id="rubrique"> ➤ Moment de la <br>journée</a></li>
+            <li> <a href="#activité" id="rubrique"> ➤ Activité</a></li>
+            <li> <a href="#sentiment" id="rubrique"> ➤ Sentiment</a></li>
+            <li> <a href="#BD" id="rubrique"> ➤ BD</a></li>
+            <li> <a href="#jeu" id="rubrique"> ➤ Licence de jeu</a></li>
+            <li> <a href="#formulaire" id="rubrique"> ➤ À vous de jouer !</a></li>
+        </ul>
+        <a href="#MentionLegales"> ➤ Mentions Légales</a>
+    </div>
+
+    
+
+    <div class="liste-analogies">
+        <!--<section>
+            <h2>Si j’étais [analogie], je serais [une valeur de l’analogie].</h2>
+        </section>-->
+    </div>
+
+    <div class="popup popup-invisible">
+        <img src="">
+        <p></p>
+    </div>
+
+    <div class="nouvelle-analogie">
+
+    </div>
+
+    <form action="">
+        <fieldset>
+            <legend id="formulaire">D'autres idées ?</legend>
+        
+            <label for="analogie" class="obligatoire">Si j'étais :</label><br>
+            <input type="text" id="analogie" placeholder="Ex: Une couleur" required><br>
+            <label for="valeur" class="obligatoire">Je serais :</label><br>
+            <input type="text" id="valeur" placeholder="Ex: L'orange" required><br>
+            <label for="explication">Explication :</label><br>
+            <textarea id="explication" placeholder="Ex: Parce que c'est ma couleur favorite."></textarea><br>
+            <label for="urlImage">Adresse de l'image :</label><br>
+            <input type="text" id="urlImage" placeholder="Ex: https://www.montersonbusiness.com/wp-content/uploads/2022/08/orange_580x580px.png">
+            <p class="obligatoire">Champs obligatoire</p>
+            <input type="submit" value="Envoyer" class="Envoyer">
+        </fieldset>
+    </form>
+
+    <p class="mentionsLegales">Mentions Légales</p>
+
+</body>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</html>

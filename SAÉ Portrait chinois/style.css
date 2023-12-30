@@ -1,0 +1,228 @@
+ 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
+    font-family: 'Paytone One', sans-serif;
+}
+.popup {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.popup-visible {
+    display: block;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+.popup img{
+    width: 100%;
+}
+
+.popup-invisible {
+    display: none;
+}
+
+header {
+    display:block;
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    position: relative;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 4px 17px 6px rgba(0,0,0,0.34); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 4px 17px 6px rgba(0,0,0,0.34);
+}
+
+section{
+    background-color: black;
+}
+.SideNav{
+    height: 100%;
+    width: 410px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: -410px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    opacity: 98%;
+}
+
+.SideNav a {
+    text-align: center ;
+    margin-top: 15px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #f27c58;
+    display: block;
+    transition: 0.3s;
+}
+
+.SideNav a:hover{
+    color: #a92700;
+    font-size: 2.3rem;
+}
+
+.SideNav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menuOuvert{
+    left: 0;
+}
+
+.Close{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2rem;
+}
+.Close:hover{
+    cursor: pointer;
+}
+
+.Burger-icon{
+    z-index: 2;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 60px;
+    height: 10px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.Burger-icon span:hover{
+    cursor: pointer;
+}
+
+h1 {
+    position: relative;
+    margin-top: 0;
+    top: -20px;
+    font-family: 'Paytone One', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.titre{
+    font-size: 2.5rem;
+}
+.prenom{
+    font-size: 1rem;
+    color: #f27c58;
+}
+h2{
+    font-size: 2rem;
+    position: relative;
+    margin: auto;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0)
+}
+
+.block-img {
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    height: 100vh;
+    border-bottom: white solid 5px;
+}
+
+.mot-cliquable {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.mot-cliquable:hover {
+    color: rgb(241, 187, 187);
+    cursor: pointer;
+}
+
+.animal {
+    background-image: url(img/fox.jpg);
+}
+
+.sentiment{
+    background-image: url(img/montre.jpg);
+}
+
+.saison{
+    background-image: url(img/palmier.jpg);
+}
+
+.moment{
+    background-image: url(img/sunset.jpg);
+}
+
+.activité{
+    background-image: url(img/ski.jpg);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 4px 17px 6px rgba(0,0,0,0.34); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 4px 17px 6px rgba(0,0,0,0.34);
+}
+
+form{
+    text-align: center;
+    font-family: 'Paytone One', sans-serif;
+}
+
+legend{
+    font-size: 2rem;
+    color: #f27c58;
+}
+
+label.obligatoire::after{
+    content: " *";
+    color: #f27c58;
+}
+
+p.obligatoire::before{
+    content: "* ";
+    color: #f37d59
+}
+input[type="text"], textarea{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: calc(0.75vw + 0.5vh);
+    box-sizing: border-box;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 3px solid #ffffffbf;
+    background-color: rgba(34, 34, 50, 0.5);
+    margin: 5px;
+}
+input.Envoyer{
+    border: #000000 solid 1px;
+    font-size: 1rem;
+    font-family:'Paytone One', sans-serif;
+    background-image: linear-gradient(to right, #f37d59 0%, #eeb26d 51%, #f37d59  100%);
+    padding: 5px 20px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+}      
+input.Envoyer:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+     
+.mentionsLegales{
+    text-align: center;
+}
